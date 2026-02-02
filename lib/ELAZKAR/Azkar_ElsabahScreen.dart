@@ -19,6 +19,9 @@ class AzkarElsabahScreen extends StatelessWidget {
       body: BlocConsumer<AzkarCubit, List<Zekaritem>>(
         listener: (context, state) {},
         builder: (context, state) {
+          if (state.isEmpty) {
+            return const Center(child: Text('لا توجد أذكار حالياً'));
+          }
           return ListView.separated(
             padding: const EdgeInsets.all(16),
             itemCount: state.length,
