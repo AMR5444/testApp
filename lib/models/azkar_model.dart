@@ -1,11 +1,23 @@
-class Zekaritem {
+class ZekrItem {
   final String text;
-  final int repeat;
+  final String content;
+  final int count;
   int currentCount;
+  final String description;
 
-  Zekaritem({required this.text, required this.repeat}) : currentCount = repeat;
+  ZekrItem({
+    required this.text,
+    required this.content,
+    required this.count,
+    required this.description,
+  }) : currentCount = count;
 
-  void decrease() {
-    if (currentCount > 0) currentCount--;
+  factory ZekrItem.fromJson(Map<String, dynamic> json) {
+    return ZekrItem(
+      content: json['content'] ?? '',
+      count: int.tryParse(json['count'].toString()) ?? 1,
+      description: json['description'] ?? '',
+      text: '',
+    );
   }
 }
