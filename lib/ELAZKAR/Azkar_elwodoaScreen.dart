@@ -53,7 +53,7 @@ class AzkarElwodo2Screen extends StatelessWidget {
                       CircleAvatar(
                         radius: 20,
                         child: Text(
-                          '3',
+                          zekr.currentCount.toString(),
                           style: const TextStyle(fontWeight: FontWeight.bold),
                         ),
                       ),
