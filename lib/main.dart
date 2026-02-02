@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-      create: (context) => AzkarCubit(AzkarApi())..loadAzkar('الأذكار...!'),
+      create: (context) => AzkarCubit(AzkarApi())..loadAzkar('أذكار'),
       child: MaterialApp(
         home: AzkarCategoriesScreen(),
         debugShowCheckedModeBanner: false,

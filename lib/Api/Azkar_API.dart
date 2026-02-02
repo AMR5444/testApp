@@ -14,7 +14,8 @@ class AzkarApi {
     }
 
     final Map<String, dynamic> data = jsonDecode(response.body);
-
+    // ignore: avoid_print
+    print(data.keys);
     final List list = data[category] ?? [];
 
     return list

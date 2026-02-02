@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:test_app/widgets/Generic%20Azkar%20Screen.dart';
-import 'azkar_screen.dart';
 
 class AzkarCategoriesScreen extends StatelessWidget {
   const AzkarCategoriesScreen({super.key});
@@ -11,8 +10,8 @@ class AzkarCategoriesScreen extends StatelessWidget {
       'أذكار الصباح',
       'أذكار المساء',
       'أذكار النوم',
-      'أذكار بعد الصلاة',
-      'أذكار الوضوء',
+      'أذكار الاستيقاظ',
+      'أذكار بعد السلام من الصلاة المفروضة',
     ];
 
     return Scaffold(

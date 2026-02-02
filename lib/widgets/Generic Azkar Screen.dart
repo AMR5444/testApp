@@ -16,7 +16,7 @@ class AzkarScreen extends StatelessWidget {
       create: (_) => AzkarCubit(AzkarApi())..loadAzkar(category),
       child: Scaffold(
         appBar: AppBar(title: Text(title), centerTitle: true),
-        body: const AzkarListView(),
+        body: AzkarListView(),
       ),
     );
   }
